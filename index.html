@@ -6,21 +6,25 @@
     <title>Basic Topics for HTML</title>
   </head>
   <body>
-    <em>hello, I am abdul muhith</em>
+    <em>Hi, <strong>I am abdul muhith</strong></em>
+    <i>a Software Developer with a keen interest in digital world.</i>
 
     <ol>
-      <li>First item</li>
-      <li>Second item</li>
+      <li>Portfolio Website useing HTML only</li>
+      <li>Basic Topics for HTML</li>
     </ol>
 
     <ul>
-      <li>Item one</li>
-      <li>Item two</li>
+      <li>Semantic HTML</li>
+      <li>Meta tags</li>
+      <li>Tables</li>
+      <li>Forms</li>
+      <li>Multimedia</li>
+      <li>Iframes</li>
     </ul>
 
     <dl>
       <dt><h3>Links</h3></dt>
-      <!-- Internal Links:  -->
       <dd>
         <dl>
           <dt>
@@ -80,6 +84,96 @@
             >
           </dd>
         </dl>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><h3>Table</h3></dt>
+      <dd>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+          <tr>
+            <td>Ayan</td>
+            <td>Instructor</td>
+          </tr>
+          <tr>
+            <td>Jillur Rahman</td>
+            <td>Support</td>
+          </tr>
+          <tr>
+            <td>Abdul Muhith</td>
+            <td>Learner</td>
+          </tr>
+        </table>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><h3>Form</h3></dt>
+      <dd>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value="Abdul Muhith"
+            minlength="3"
+            maxlength="17"
+            required
+          />
+
+          <br />
+          <br />
+
+          <label for="name">Age:</label>
+          <input type="number" name="age" min="18" max="40" required />
+
+          <br />
+          <br />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            minlength="10"
+            maxlength="500"
+          ></textarea>
+
+          <br />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><h3>Multimedia</h3></dt>
+      <dd>
+        <audio controls>
+          <source src="audio/sample.mp3" type="audio/mpeg" />
+          <source src="audio/sample.ogg" type="audio/ogg" />
+          Your browser does not support the audio element.
+        </audio>
+      </dd>
+    </dl>
+
+    <dl>
+      <dt><h3>Iframes</h3></dt>
+      <dd>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/4O7RZy10Wyw?si=Oca1U9wDBm43aecP"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </dd>
     </dl>
   </body>
